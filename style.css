@@ -1,0 +1,244 @@
+html{
+    scroll-behavior: smooth;
+}
+ul.dropdown-menu.show{
+    width: max-content;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    justify-items: center;
+    align-content: center;
+    background-color:black;
+    border-radius: 12px;
+} 
+ul.dropdown-menu.show li a{
+    color: gray;
+   font-family: math;
+}
+ul.dropdown-menu.show li a:hover{
+    background-color: transparent;
+    color: white;
+
+}
+ul.navbar-nav{
+    padding-left: 2rem;
+}
+img{
+    height: 30vh;
+    width: 10vw;
+}
+.w-100{
+    width: 10vw;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+body{
+    
+    color: white;
+    height: 200vh;
+    display: flex;
+flex-direction: column;
+}
+.navbar-expand-lg{
+    border-bottom: 1px solid white;
+    
+}
+.container{
+display: block;
+
+}
+.popular{
+    display: flex;
+    height: auto;
+    align-items: center;
+    width: 90rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+span{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.fa-circle-play{
+    color: white;
+    font-size: 45px;
+    position: absolute;
+}
+
+.movieCard{
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.headd , .headd a{
+    width: 84vw;
+    gap: 5px;
+    margin-top: 2rem;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: serif;
+}
+.headd > a > i:hover{
+    color: yellow;
+}
+span:hover{
+    outline: 2px solid white;
+    border-radius: 9px;
+    cursor: pointer;
+   
+}
+span:hover img{
+    transform: scale(0.95);
+}
+.play i{
+    visibility: hidden;
+}
+.play:hover i{
+    visibility: visible;
+    font-size: 40px;
+    
+}
+
+.container2 {
+  display: flex;
+  color: #202C39;
+  width: 27vw;
+  justify-content: space-evenly;
+}
+#searchbar {
+   padding: 15px;
+   border-radius: 5px;
+   height: 5vh;
+}
+input[type=text] {
+   -webkit-transition: width 0.15s ease-in-out;
+   transition: width 0.15s ease-in-out;
+}
+#list {
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    left: 80%;
+    flex-direction: column;
+    top: 125%;
+    overflow: auto;
+    height: 60vh;
+    background-color: transparent;
+    backdrop-filter: contrast(0.5);
+    
+}
+.listItem {
+  text-decoration: none;
+  padding: 5px 20px;
+  color: black;
+  display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 18vw;
+    border-bottom: 1px solid white;
+    display: flex;
+    gap: 28px;
+    white-space: pre;
+    font-family: math;
+}
+.listItem img{
+  height: 15vh;
+  width: 5vw;
+}
+#navbarNavDropdown ul li a:hover{
+color: red;
+}
+#navbarNavDropdown ul li a{
+color: white;
+}
+.listItem p{
+    /* font-size: 30px; */
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    max-inline-size: min-content;
+}
+.carousel-item img{
+    height: 60vh;
+    object-fit: none;
+}
+@media  screen and (max-width:480px){
+    body{
+        display: flex;
+        width: fit-content;
+        margin: 2px;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 97vw;
+    }
+    .navbar{
+        width: 90vw;
+    }
+   .popular{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 2rem;
+    
+   }
+   main .container{
+    margin:0rem;
+   }
+  .navbar .container2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 52vw;
+    gap: 8px;
+   }
+.container2 .btn{
+    height: 4vh;
+    padding: revert;
+}
+  .navbar-brand {
+    font-size: xx-large;
+    font-family: emoji;
+   }
+   .navbar-nav{
+    display: flex;
+   }
+   #searchbar{
+    height: 4vh;
+    width: 35vw;
+   }
+  nav .carousel{
+    width: 81vw;
+    background-image: none;
+   }
+   .carousel-item{
+    height:  30vw;
+   }
+   .carousel-item img{
+    height: 20vh;
+    object-fit: cover;
+   }
+ .container .headd , .container .headd a{
+    font-size: x-large;
+    font-family: math;
+ }
+   .movieCard{
+    width: 20vw;
+    height: 20vh;
+   }
+}
